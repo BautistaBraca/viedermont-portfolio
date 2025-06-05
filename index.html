@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Viedermont - Seleccionar Idioma</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5; 
+            margin: 0;
+            padding: 20px; 
+            box-sizing: border-box; 
+        }
+        .container {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 12px; 
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        .logo {
+            max-width: 150px; 
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 1.75rem; 
+            color: #1a202c; 
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1rem;
+            color: #4a5568; 
+            margin-bottom: 30px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; 
+            gap: 15px; 
+        }
+        .button {
+            display: block; 
+            padding: 15px 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            transform: translateY(-2px); 
+        }
+        .button-es {
+            background-color: #38a169; 
+        }
+        .button-es:hover {
+            background-color: #2f855a;
+        }
+        .button-en {
+            background-color: #3182ce; 
+        }
+        .button-en:hover {
+            background-color: #2b6cb0;
+        }
+        .footer-text {
+            margin-top: 30px;
+            font-size: 0.875rem;
+            color: #718096; 
+        }
+
+        @media (min-width: 640px) {
+            .button-container {
+                flex-direction: row;
+                justify-content: center; 
+            }
+            .button {
+                display: inline-block; 
+                width: auto; 
+            }
+             .container {
+                 padding: 40px 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Opcional: Reemplaza con la URL de tu logo si lo tienes alojado -->
+        <!-- <img src="URL_DE_TU_LOGO.png" alt="Logo Viedermont" class="logo"> -->
+        
+        <h1>Bienvenido / Welcome</h1>
+        <p>Por favor, selecciona el idioma para ver nuestro portafolio.<br>Please select the language to view our portfolio.</p>
+        
+        <div class="button-container">
+            <!-- 
+                IMPORTANTE: 
+                1. Asegúrate de que 'viedermont_es.pdf' sea el nombre correcto de tu archivo PDF en español.
+                2. Si el nombre del archivo PDF en español es diferente, deberás generar la URL codificada correcta para él.
+                   Por ejemplo, si es 'portafolio_viedermont_espanol.pdf', la URL raw sería:
+                   https://raw.githubusercontent.com/BautistaBraca/viedermont-portfolio/main/portafolio_viedermont_espanol.pdf
+                   Y la codificada sería:
+                   https%3A%2F%2Fraw.githubusercontent.com%2FBautistaBraca%2Fviedermont-portfolio%2Fmain%2Fportafolio_viedermont_espanol.pdf
+            -->
+            <a href="web/viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2FBautistaBraca%2Fviedermont-portfolio%2Fmain%2Fviedermont_es.pdf" target="_blank" class="button button-es">
+                Ver en Español
+            </a>
+            <a href="web/viewer.html?file=https%3A%2F%2Fraw.githubusercontent.com%2FBautistaBraca%2Fviedermont-portfolio%2Fmain%2Fviedermont-en.pdf" target="_blank" class="button button-en">
+                View in English
+            </a>
+        </div>
+    
+        <p class="footer-text">
+            El portafolio se mostrará en una nueva pestaña.
+            <br>
+            The portfolio will be displayed in a new tab.
+        </p>
+    </div>
+</body>
+</html>
 
